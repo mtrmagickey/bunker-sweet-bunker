@@ -1,0 +1,22 @@
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #2C3639;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .home-button {
+    background-color: #A27B5C;
+    color: #DCD7C9;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .home-button:hover {
+    background-color: #3F4E4F;
+  }
+  

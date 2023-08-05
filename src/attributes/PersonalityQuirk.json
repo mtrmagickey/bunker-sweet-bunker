@@ -1,0 +1,25 @@
+{
+    "quirks": [
+      { "roll": 1, "quirk": "Only speaks in third person" },
+      { "roll": 2, "quirk": "Currently Sitting on A Horse" },
+      { "roll": 3, "quirk": "Raises eyebrows suggestively at the end of each sentence" },
+      { "roll": 4, "quirk": "On The Run from A Nearby Bunker" },
+      { "roll": 5, "quirk": "Owned this bunker in the 60’s" },
+      { "roll": 6, "quirk": "Overinvested Pet Owner" },
+      { "roll": 7, "quirk": "Not Sure Everything Is So Bad" },
+      { "roll": 8, "quirk": "Takes a deep breath at the start of every sentence" },
+      { "roll": 9, "quirk": "Superstitious" },
+      { "roll": 10, "quirk": "Always wears a specific hat" },
+      { "roll": 11, "quirk": "Believes in aliens" },
+      { "roll": 12, "quirk": "Afraid of small animals" },
+      { "roll": 13, "quirk": "Constantly humming a tune" },
+      { "roll": 14, "quirk": "Never makes eye contact" },
+      { "roll": 15, "quirk": "Talks to plants" },
+      { "roll": 16, "quirk": "Collects odd objects" },
+      { "roll": 17, "quirk": "Always carries a book" },
+      { "roll": 18, "quirk": "Obsessed with cleanliness" },
+      { "roll": 19, "quirk": "Frequent daydreamer" },
+      { "roll": 20, "quirk": "Always late" }
+    ]
+  }
+  

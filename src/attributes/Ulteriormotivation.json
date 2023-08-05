@@ -1,0 +1,25 @@
+{
+    "motivations": [
+      { "roll": 1, "motivation": "Fame" },
+      { "roll": 2, "motivation": "Compulsive Thief" },
+      { "roll": 3, "motivation": "True Love" },
+      { "roll": 4, "motivation": "Wealth" },
+      { "roll": 5, "motivation": "Getting Back at an Ex" },
+      { "roll": 6, "motivation": "Someday Own the Dallas Cowboys" },
+      { "roll": 7, "motivation": "To Be the Last Person On Earth" },
+      { "roll": 8, "motivation": "This Bunker is in a Good School District" },
+      { "roll": 9, "motivation": "Really Just Wants To Use A Bathroom" },
+      { "roll": 10, "motivation": "Win Parents’ Approval" },
+      { "roll": 11, "motivation": "Repopulating the Earth" },
+      { "roll": 12, "motivation": "Trying to Get Some Sleep" },
+      { "roll": 13, "motivation": "Watch Their Favorite Movie One Last Time" },
+      { "roll": 14, "motivation": "Wants Control of Bunker Thermostat" },
+      { "roll": 15, "motivation": "Getting ‘too old for this’" },
+      { "roll": 16, "motivation": "Not sure, but you may have caused this whole thing" },
+      { "roll": 17, "motivation": "Owns a different, secret, better bunker" },
+      { "roll": 18, "motivation": "Picky Eater" },
+      { "roll": 19, "motivation": "Stranded Time Traveler" },
+      { "roll": 20, "motivation": "Secretly Afraid of the Dark" }
+    ]
+  }
+  

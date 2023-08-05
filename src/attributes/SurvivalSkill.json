@@ -1,0 +1,25 @@
+{
+    "skills": [
+      { "roll": 1, "skill": "Cooking" },
+      { "roll": 2, "skill": "Shelter Repair" },
+      { "roll": 3, "skill": "Computer Programming" },
+      { "roll": 4, "skill": "Farming" },
+      { "roll": 5, "skill": "Wilderness Survival" },
+      { "roll": 6, "skill": "Medical Education" },
+      { "roll": 7, "skill": "Fire Making" },
+      { "roll": 8, "skill": "Carpentry" },
+      { "roll": 9, "skill": "Beekeeping" },
+      { "roll": 10, "skill": "Secret Agent" },
+      { "roll": 11, "skill": "Chemistry" },
+      { "roll": 12, "skill": "Textiles" },
+      { "roll": 13, "skill": "Musician" },
+      { "roll": 14, "skill": "Can Open Anything with their Bicep" },
+      { "roll": 15, "skill": "Plumber" },
+      { "roll": 16, "skill": "Foraging" },
+      { "roll": 17, "skill": "Negotiation" },
+      { "roll": 18, "skill": "Weapon Crafting" },
+      { "roll": 19, "skill": "Very Well Might Know Magic" },
+      { "roll": 20, "skill": "2000 hours in A Flight Simulator" }
+    ]
+  }
+  

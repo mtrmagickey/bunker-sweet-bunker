@@ -1,0 +1,25 @@
+{
+    "questions": [
+      { "roll": 1, "question": "What is your main motivation for joining the bunker?" },
+      { "roll": 2, "question": "How would you contribute to the survival of the group?" },
+      { "roll": 3, "question": "Describe your ideal bunker layout." },
+      { "roll": 4, "question": "What is your biggest fear about the apocalypse?" },
+      { "roll": 5, "question": "Name one item you can't live without in the bunker." },
+      { "roll": 6, "question": "How would you handle a disagreement within the group?" },
+      { "roll": 7, "question": "What skills or hobbies do you have that might be useful?" },
+      { "roll": 8, "question": "What's your plan if you don't get selected for the bunker?" },
+      { "roll": 9, "question": "How do you feel about sharing limited resources?" },
+      { "roll": 10, "question": "What's the first thing you'd do once inside the bunker?" },
+      { "roll": 11, "question": "How would you entertain yourself during long stays in the bunker?" },
+      { "roll": 12, "question": "Describe a time when you faced a survival situation." },
+      { "roll": 13, "question": "What would you miss most about the outside world?" },
+      { "roll": 14, "question": "How would you contribute to maintaining peace in the bunker?" },
+      { "roll": 15, "question": "What's your favorite apocalypse movie or book?" },
+      { "roll": 16, "question": "How do you feel about living in close quarters with others?" },
+      { "roll": 17, "question": "What's your strategy for staying mentally healthy in isolation?" },
+      { "roll": 18, "question": "How would you help others in the bunker stay positive?" },
+      { "roll": 19, "question": "What unique quality do you bring to the bunker?" },
+      { "roll": 20, "question": "Why should you be the one chosen for the bunker?" }
+    ]
+  }
+  

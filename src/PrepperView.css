@@ -1,0 +1,35 @@
+.prepper-view-container {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px black;
+    padding: 20px;
+  }
+  
+  .question-card {
+    text-align: center;
+    background: rgba(167,126,84, 0.9); /* A semi-transparent background for better readability */
+    border-radius: 32px 16px 64px 6px; /* Rounded asymmetric corners */
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .roll-button {
+    padding: 10px 20px;
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    background-color: #2C3639;
+    color: #DCD7C9;
+    border: 2px solid #3F4E4F;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .roll-button:hover {
+    background-color: #A27B5C;
+  }
+  
