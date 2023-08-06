@@ -8,6 +8,7 @@ import QuestionGenerator from './QuestionGenerator';
 
 const prepperBackgrounds = [
   require('../assets/BSB_imgPrep_1.jpg'),
+  require('../assets/BSB_imgPrep_2.jpg'),
   require('../assets/BSB_imgPrep_3.jpg'),
   require('../assets/BSB_imgPrep_4.jpg'),
   require('../assets/BSB_imgPrep_5.jpg'),
@@ -22,6 +23,7 @@ const PrepperView = () => {
 
   return (
     <div className="prepper-container" style={{ backgroundImage: `url(${randomBackground})` }}>
+           <div className="text-container">
       <PrepperCreation />
       <h2>Contestant Score Keeping Notes!</h2>
       <ScoreKeeper seekers={seekers} />
@@ -29,14 +31,15 @@ const PrepperView = () => {
       <QuestionGenerator />
       <h2>Round 2 Question for Bunker-Seekers</h2>
       <QuestionGenerator />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <Footer />
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+    </div>
+    <Footer />
     </div>
   );
-};
+}
 
 export default PrepperView;

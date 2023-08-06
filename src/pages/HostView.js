@@ -4,10 +4,17 @@ import CommercialBreak from './CommercialBreak';
 import Footer from './Footer';
 import '../HostView.css';
 
+const hostBackgrounds = [
+  require('../assets/BSB_imgHost_1.jpg'),
+  require('../assets/BSB_imgHost_3.jpg'),
+  require('../assets/BSB_imgHost_4.jpg'),
+  require('../assets/BSB_imgHost_5.jpg'),
+];
 
 const HostView = () => {
   const [introductionRoll, setIntroductionRoll] = useState(null);
   const [seekers, setSeekers] = useState(['Bunker Seeker 1', 'Bunker Seeker 2', 'Bunker Seeker 3 (optional)', 'Bunker Seeker 4 (optional)']); // placeholders for now
+  const randomBackground = hostBackgrounds[Math.floor(Math.random() * hostBackgrounds.length)];
 
   const rollForIntroduction = () => {
     const roll = Math.floor(Math.random() * 6) + 1;
@@ -75,8 +82,10 @@ So arm your anti-virus and plug in! The robotic uprising may be underway, but th
   };
 
   return (
-    <div>
+    <div className="host-container" style={{ backgroundImage: `url(${randomBackground})` }}>
+            <div className="text-container">
       <h1>Host View</h1>
+      <p>Welcome, Host!</p>
       <button onClick={rollForIntroduction}>Roll for Introduction Speech</button>
       <p>{introductionRoll ? getIntroductionText() : 'Introduction speech will be displayed here after rolling.'}</p>
       <h2>Contestant Introduction Questions</h2>
@@ -89,7 +98,8 @@ So arm your anti-virus and plug in! The robotic uprising may be underway, but th
       <br></br>
       <br></br>
       <br></br>
-      <Footer />
+    </div>
+    <Footer />
     </div>
   );
 };

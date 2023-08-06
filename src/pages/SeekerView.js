@@ -7,33 +7,34 @@ import '../SeekerView.css';
 import QuestionGenerator from './QuestionGenerator';
 
 const seekerBackgrounds = [
-    require('../assets/BSB_imgSeek_1.jpg'),
-    require('../assets/BSB_imgSeek_3.jpg'),
-    require('../assets/BSB_imgSeek_4.jpg'),
-    require('../assets/BSB_imgSeek_5.jpg'),
-    require('../assets/BSB_imgSeek_7.jpg'),
-    require('../assets/BSB_imgSeek_8.jpg'),
-    require('../assets/BSB_imgSeek_9.jpg'),
+  require('../assets/BSB_imgSeek_1.jpg'),
+  require('../assets/BSB_imgSeek_2.jpg'),
+  require('../assets/BSB_imgSeek_3.jpg'),
+  require('../assets/BSB_imgSeek_4.jpg'),
+  require('../assets/BSB_imgSeek_5.jpg'),
+  require('../assets/BSB_imgSeek_6.jpg'),
+  require('../assets/BSB_imgSeek_7.jpg'),
+  require('../assets/BSB_imgSeek_8.jpg'),
+  require('../assets/BSB_imgSeek_9.jpg'),
 ];
 
-const randomBackground = seekerBackgrounds[Math.floor(Math.random() * seekerBackgrounds.length)];
+const SeekerView = () => {
+  const [ulteriorMotivationRoll, setUlteriorMotivationRoll] = useState(null);
+  const [survivalSkillRoll, setSurvivalSkillRoll] = useState(null);
+  const [personalityQuirkRoll, setPersonalityQuirkRoll] = useState(null);
 
-function SeekerView() {
-    const [ulteriorMotivationRoll, setUlteriorMotivationRoll] = useState(null);
-    const [survivalSkillRoll, setSurvivalSkillRoll] = useState(null);
-    const [personalityQuirkRoll, setPersonalityQuirkRoll] = useState(null);
+  const rollForAttribute = (setRollState) => {
+    const roll = Math.floor(Math.random() * 20) + 1;
+    setRollState(roll);
+  };
 
-    const rollForAttribute = (setRollState) => {
-        const roll = Math.floor(Math.random() * 20) + 1;
-        setRollState(roll);
-    };
-
-
+  const randomBackground = seekerBackgrounds[Math.floor(Math.random() * seekerBackgrounds.length)];
 
   return (
     <div className="seeker-container" style={{ backgroundImage: `url(${randomBackground})` }}>
-      <h1>Bunker-Seeker Character Guide</h1>
-      <h2>Roll for Attributes</h2>
+            <div className="text-container">
+
+      <h1>Bunker Seeker Character Creation</h1>
       <button onClick={() => rollForAttribute(setUlteriorMotivationRoll)}>Roll for Ulterior Motivation</button>
       <p>Ulterior Motivation: {ulteriorMotivationRoll ? ulteriorMotivation.motivations.find(m => m.roll === ulteriorMotivationRoll).motivation : 'Not rolled yet'}</p>
       <button onClick={() => rollForAttribute(setSurvivalSkillRoll)}>Roll for Survival Skill</button>
@@ -42,15 +43,10 @@ function SeekerView() {
       <p>Personality Quirk: {personalityQuirkRoll ? personalityQuirk.quirks.find(q => q.roll === personalityQuirkRoll).quirk : 'Not rolled yet'}</p>
       <h2>Lightning-Round Question for Prepper</h2>
       <QuestionGenerator />
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <Footer />
-      </div>
+    </div>
+    <Footer />
+    </div>
   );
 }
-  
 
 export default SeekerView;

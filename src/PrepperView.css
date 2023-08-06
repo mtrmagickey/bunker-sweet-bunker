@@ -11,15 +11,26 @@
     padding: 20px;
   }
   
-  .prepper-container {
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFD700;
-    font-family: "Bangers", cursive;
+  .text-container {
+    text-align: center;
+    background: rgba(167,126,84, 0.9); /* A semi-transparent background for better readability */
+    border-radius: 32px 16px 64px 6px; /* Rounded asymmetric corners */
+    padding: 20px;
+    margin: 20px;
   }
+
+  .prepper-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4e1d2;
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+
 
   .prepper-container h1 {
     font-size: 5rem;
@@ -48,4 +59,24 @@
   .roll-button:hover {
     background-color: #A27B5C;
   }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2d545e;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #8c0038;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #2d545e;
+    text-shadow: 1px 2px white;
+
+}
   
