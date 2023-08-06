@@ -11,6 +11,22 @@
     padding: 20px;
   }
   
+  .prepper-container {
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFD700;
+    font-family: "Bangers", cursive;
+  }
+
+  .prepper-container h1 {
+    font-size: 5rem;
+    text-shadow: 2px 2px black;
+  }
+
+
   .question-card {
     text-align: center;
     background: rgba(167,126,84, 0.9); /* A semi-transparent background for better readability */

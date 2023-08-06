@@ -6,20 +6,34 @@ import Footer from './Footer';
 import '../SeekerView.css';
 import QuestionGenerator from './QuestionGenerator';
 
+const seekerBackgrounds = [
+    require('../assets/BSB_imgSeek_1.jpg'),
+    require('../assets/BSB_imgSeek_3.jpg'),
+    require('../assets/BSB_imgSeek_4.jpg'),
+    require('../assets/BSB_imgSeek_5.jpg'),
+    require('../assets/BSB_imgSeek_7.jpg'),
+    require('../assets/BSB_imgSeek_8.jpg'),
+    require('../assets/BSB_imgSeek_9.jpg'),
+];
 
-const BunkerSeekerView = () => {
-  const [ulteriorMotivationRoll, setUlteriorMotivationRoll] = useState(null);
-  const [survivalSkillRoll, setSurvivalSkillRoll] = useState(null);
-  const [personalityQuirkRoll, setPersonalityQuirkRoll] = useState(null);
+const randomBackground = seekerBackgrounds[Math.floor(Math.random() * seekerBackgrounds.length)];
 
-  const rollForAttribute = (setRollState) => {
-    const roll = Math.floor(Math.random() * 20) + 1;
-    setRollState(roll);
-  };
+function SeekerView() {
+    const [ulteriorMotivationRoll, setUlteriorMotivationRoll] = useState(null);
+    const [survivalSkillRoll, setSurvivalSkillRoll] = useState(null);
+    const [personalityQuirkRoll, setPersonalityQuirkRoll] = useState(null);
+
+    const rollForAttribute = (setRollState) => {
+        const roll = Math.floor(Math.random() * 20) + 1;
+        setRollState(roll);
+    };
+
+
 
   return (
-    <div>
-      <h1>Bunker Seeker Character Creation</h1>
+    <div className="seeker-container" style={{ backgroundImage: `url(${randomBackground})` }}>
+      <h1>Bunker-Seeker Character Guide</h1>
+      <h2>Roll for Attributes</h2>
       <button onClick={() => rollForAttribute(setUlteriorMotivationRoll)}>Roll for Ulterior Motivation</button>
       <p>Ulterior Motivation: {ulteriorMotivationRoll ? ulteriorMotivation.motivations.find(m => m.roll === ulteriorMotivationRoll).motivation : 'Not rolled yet'}</p>
       <button onClick={() => rollForAttribute(setSurvivalSkillRoll)}>Roll for Survival Skill</button>
@@ -36,6 +50,7 @@ const BunkerSeekerView = () => {
       <Footer />
       </div>
   );
-};
+}
+  
 
-export default BunkerSeekerView;
+export default SeekerView;
