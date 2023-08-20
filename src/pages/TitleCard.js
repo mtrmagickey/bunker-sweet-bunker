@@ -19,7 +19,8 @@ const TitleCard = () => {
   return (
     <div className="title-card-container" style={{ backgroundImage: `url(${randomBackground})` }}>
       <div className="text-container">
-      <h1>The end is near and you’re all alone...</h1>
+
+      <br></br> <h1>The end is near and you’re all alone...</h1>
       <h3>Ladies and Gentlemen, Love is in the air!, or that might just be the radiation? On tonight’s show, this local Prepper will be accepting one of you into this fine mid-century fallout shelter to be locked away safely for the foreseeable future!</h3>
       <h2>Now, Let’s meet our contestants (and Host)</h2>
       <img src={bunkerLogo} alt="Bunker Sweet Bunker" className="logo" />
@@ -34,11 +35,6 @@ const TitleCard = () => {
         <button>Seeker</button>
       </Link>
     </div>
-    <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
       <Footer />
     </div>
   );

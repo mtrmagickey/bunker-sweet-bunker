@@ -1,8 +1,6 @@
 .seeker-view-container {
     background-size: cover;
-    background-position: center;
     min-height: 100vh;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -23,18 +21,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     min-height: 100vh;
-    background-color: #f4e1d2;
-    font-family: 'Arial', sans-serif;
+    background-color: #282c34;
+    font-family: 'Courier New', Courier, monospace;
     background-size: cover;
-    background-position: center;
-}
-
+  }
+  
   .seeker-container h1 {
-    font-size: 5rem;
-    text-shadow: 2px 2px black;
-  } 
+    color: white;
+    font-size: 2rem; /* Adjusted for mobile screens */
+    margin-bottom: 2rem;
+  }
+  
+  .seeker-container button {
+    background-color: #61dafb;
+    border: none;
+    color: white;
+    padding: 0.5rem 0.8rem; /* Adjusted for mobile screens */
+    font-size: 0.9rem; /* Adjusted for mobile screens */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0.5rem 0;
+  }
+  
+  .seeker-container button:hover {
+    background-color: #4fa8d7;
+  }
+  
 
   .question-card {
     text-align: center;
@@ -71,10 +84,10 @@ h2 {
 }
 
 p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    color: #2d545e;
-    text-shadow: 1px 2px white;
+  font-size: 2rem; /* Adjusted font size */
+  margin-bottom: 10px; /* Adjusted margin */
+  color: #FFF;
+  text-align: center;
 
 }
   

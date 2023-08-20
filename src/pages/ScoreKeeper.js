@@ -36,10 +36,10 @@ const ScoreKeeper = ({ seekers }) => {
     <div>
       {seekers.map((seeker) => (
         <div key={seeker}>
-          <button onClick={() => decrementScore(seeker)}>-</button>
+          <button className="score-button" onClick={() => decrementScore(seeker)}>-</button>
           {scores[seeker]}
-          <button onClick={() => incrementScore(seeker)}>+</button>
-          <input 
+          <button className="score-button" onClick={() => incrementScore(seeker)}>+</button>
+          <input  
             type="text" 
             value={labels[seeker]} 
             onChange={(event) => handleLabelChange(event, seeker)}

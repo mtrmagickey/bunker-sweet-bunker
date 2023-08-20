@@ -1,82 +1,94 @@
 .prepper-view-container {
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-shadow: 2px 2px black;
-    padding: 20px;
-  }
-  
-  .text-container {
-    text-align: center;
-    background: rgba(167,126,84, 0.9); /* A semi-transparent background for better readability */
-    border-radius: 32px 16px 64px 6px; /* Rounded asymmetric corners */
-    padding: 20px;
-    margin: 20px;
-  }
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px black;
+  padding: 20px;
+}
 
-  .prepper-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #f4e1d2;
-    font-family: 'Arial', sans-serif;
-    background-size: cover;
-    background-position: center;
+.text-container {
+  text-align: center;
+  background: rgba(167,126,84, 0.9); /* A semi-transparent background for better readability */
+  border-radius: 32px 16px 64px 6px; /* Rounded asymmetric corners */
+  padding: 20px;
+  margin: 20px;
+}
+
+.prepper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #282c34;
+  font-family: 'Courier New', Courier, monospace;
+  background-size: cover;
+}
+
+.prepper-container h1 {
+  color: white;
+  font-size: 2rem; /* Adjusted for mobile screens */
+  margin-bottom: 2rem;
+}
+
+.prepper-container button {
+  background-color: #61dafb;
+  border: none;
+  color: white;
+  padding: 0.5rem 0.8rem; /* Adjusted for mobile screens */
+  font-size: 0.9rem; /* Adjusted for mobile screens */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0.5rem 0;
+}
+
+.prepper-container button:hover {
+  background-color: #4fa8d7;
 }
 
 
-  .prepper-container h1 {
-    font-size: 5rem;
-    text-shadow: 2px 2px black;
-  }
 
+.question-card {
+  text-align: center;
+  background: rgba(167,126,84, 0.9); /* A semi-transparent background for better readability */
+  border-radius: 32px 16px 64px 6px; /* Rounded asymmetric corners */
+  padding: 20px;
+  margin: 20px;
+}
 
-  .question-card {
-    text-align: center;
-    background: rgba(167,126,84, 0.9); /* A semi-transparent background for better readability */
-    border-radius: 32px 16px 64px 6px; /* Rounded asymmetric corners */
-    padding: 20px;
-    margin: 20px;
-  }
-  
-  .roll-button {
-    padding: 10px 20px;
-    font-size: 1.2rem; /* Adjust the font size as needed */
-    background-color: #2C3639;
-    color: #DCD7C9;
-    border: 2px solid #3F4E4F;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .roll-button:hover {
-    background-color: #A27B5C;
-  }
+.roll-button {
+  padding: 10px 20px;
+  font-size: 1.2rem; /* Adjust the font size as needed */
+  background-color: #2C3639;
+  color: #DCD7C9;
+  border: 2px solid #3F4E4F;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #2d545e;
+.roll-button:hover {
+  background-color: #A27B5C;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2d545e;
 }
 
 h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #8c0038;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #8c0038;
 }
 
 p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    color: #2d545e;
-    text-shadow: 1px 2px white;
-
+  font-size: 2rem; /* Adjusted font size */
+  margin-bottom: 10px; /* Adjusted margin */
+  color: #FFF;
+  text-align: center;
 }
-  

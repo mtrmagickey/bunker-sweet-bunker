@@ -1,71 +1,99 @@
 .title-card-container {
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-shadow: 2px 2px black;
-    padding: 20px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #282c34;
+  font-family: 'Courier New', Courier, monospace;
+  background-size: cover;
+}
+
+.title-card-title {
+  font-size: 2rem; /* Adjusted font size */
+  margin-bottom: 10px; /* Adjusted margin */
+  color: #FFF;
+  text-align: center;
+}
+
+.text-container {
+  text-align: center;
+  background: rgba(167, 126, 84, 0.9);
+  border-radius: 32px 16px 64px 6px;
+  padding: 10px; /* Reduced padding */
+  margin: 10px 0; /* Adjusted margin for better spacing */
+  width: 80%; /* Set width for better containment */
+}
+
+.logo {
+  width: 20%;
+  margin: 10px auto;
+  display: block;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10px; /* Adjusted margin */
+}
+
+.title-card-button {
+  margin: 5px; /* Reduced margin */
+  padding: 10px 15px; /* Adjusted padding */
+  font-size: 1rem; /* Adjusted font size */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #FF5733;
+  color: #FFF;
+}
+
+.title-card-button:hover {
+  background-color: #FF8F66;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
   .text-container {
-    text-align: center;
-    background: rgba(167,126,84, 0.9); /* A semi-transparent background for better readability */
-    border-radius: 32px 16px 64px 6px; /* Rounded asymmetric corners */
-    padding: 20px;
-    margin: 20px;
-  }
-  
-  .logo {
-    width: 20%; /* Reduced size for desktop */
-    margin: 10px auto;
-    display: block;
-  }
-  
-  .button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 20px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 1.2rem; /* Adjust the font size as needed */
-    background-color: #2C3639;
-    color: #DCD7C9;
-    border: 2px solid #3F4E4F;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #A27B5C;
-  }
-  
-  /* Mobile responsiveness */
-  @media only screen and (max-width: 768px) {
-    .text-container {
       max-width: 90%;
-    }
-  
-    @media only screen and (max-width: 768px) {
-        .logo {
-          width: 40%; /* Adjusted size for mobile */
-        }
-      }
-  
-    .button-container {
+  }
+
+  .logo {
+      width: 40%;
+  }
+
+  .button-container {
       flex-direction: column;
-    }
-  
-    button {
-      margin: 10px;
-      width: 80%;
-    }
+  }
+
+  .title-card-button {
+      margin: 15px 0; 
+      width: 80%; 
+  }
+
+
+
+  .text-container {
+      width: 90%;
+  }
+
+  .logo {
+      width: 40%;
+  }
+
+  .button-container {
+      flex-direction: column;
+  }
+
+  .title-card-button {
+      margin: 5px 0; /* Adjusted margin for mobile */
+      width: 90%; /* Set width for mobile */
+  }
+
+  .seeker-view-container, .prepper-view-container, .title-card-container, .host-container {
+    margin-bottom: 100px; /* Adjust this value based on the height of your footer */
   }
   
+}
