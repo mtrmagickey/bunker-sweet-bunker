@@ -27,8 +27,6 @@ const PrepperCreation = () => {
       <p>Survival Skill: {survivalSkillRoll ? survivalSkill.skills.find(s => s.roll === survivalSkillRoll).skill : 'Not rolled yet'}</p>
       <button onClick={() => rollForAttribute(setPersonalityQuirkRoll)}>Roll for Personality Quirk</button>
       <p>Personality Quirk: {personalityQuirkRoll ? personalityQuirk.quirks.find(q => q.roll === personalityQuirkRoll).quirk : 'Not rolled yet'}</p>
-      <button onClick={() => rollForAttribute(setSecretBunkerFlawRoll)}>Roll for Secret Bunker Flaw</button>
-      <p>Secret Bunker Flaw: {secretBunkerFlawRoll ? 'Define the Secret Bunker Flaw here based on the roll' : 'Not rolled yet'}</p>
       <Footer />
       </div>
   );
